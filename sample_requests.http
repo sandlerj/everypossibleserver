@@ -1,0 +1,13 @@
+PUT https://every-possible-server.glitch.me/world
+content-type: application/json
+
+{
+    "world": "1"
+}
+
+
+###
+GET https://every-possible-server.glitch.me/world
+
+###
+GET https://every-possible-server.glitch.me
