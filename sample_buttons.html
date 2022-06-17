@@ -2,12 +2,12 @@
     <head>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script>
-            function worldDirect(n) {
+            function titleDirect(n) {
                 const redirectUrl = "https://twitch.tv/everypossiblerecording"
                 const body = {
-                    "world": n
+                    "title": n
                 }
-                const url = 'https://every-possible-server.glitch.me/world';
+                const url = 'https://every-possible-server.glitch.me/title';
                 axios.put(url, body)
                 .then(data=>{
                     console.log(data)
@@ -83,8 +83,8 @@
     </head>
     
     <body>
-        <button class="button-20" role="button" onclick="worldDirect(1)">Whatever</button>
-        <button class="button-20" role="button" onclick="worldDirect(2)">World 2</button>
+        <button class="button-20" role="button" onclick="titleDirect(1)">Whatever</button>
+        <button class="button-20" role="button" onclick="titleDirect(2)">Title 2</button>
     </body>
 
 </html>
