@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const res = require('express/lib/response')
 
-const PORT = 3000
+const PORT = process.env.PORT
 
 let reset = true
 let title = 1
