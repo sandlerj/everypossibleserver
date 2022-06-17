@@ -1,8 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const res = require('express/lib/response')
+const cors = require('cors');
 
-const PORT = process.env.PORT
+const PORT = 3000
 
 let reset = true
 let title = 1
@@ -12,7 +13,9 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(bodyParser.json())
-
+app.use(cors({
+    origin: '*'
+}));
 app.get('/', (req,res) => {
     res.json({"message": "Server is running :D"});
 });
